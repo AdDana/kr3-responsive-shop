@@ -349,3 +349,13 @@ textarea:focus-visible {
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
 }
+
+html,
+body,
+a,
+button,
+.button,
+.site-nav__link,
+.site-nav__toggle {
+    cursor: url("../images/cursor.png") 1 1, auto !important;
+}
