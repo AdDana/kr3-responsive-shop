@@ -1,0 +1,16 @@
+{
+  "name": "kr3-responsive-shop",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Контрольная работа №3: адаптивная вёрстка и доступность",
+  "scripts": {
+    "test:static": "python3 tests/static_check.py",
+    "test:responsive": "node tests/responsive.mjs",
+    "audit": "bash scripts/lighthouse.sh"
+  },
+  "devDependencies": {
+    "lighthouse": "^12.8.2",
+    "playwright": "^1.56.1"
+  }
+}

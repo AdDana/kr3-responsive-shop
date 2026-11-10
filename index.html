@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Учебный интернет-магазин</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="js/main.js" defer></script>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Учебный интернет-магазин">
+  <meta property="og:description" content="Учебный frontend-проект интернет-магазина.">
+  <meta name="description" content="Учебный магазин коллекционных фигурок: каталог, карточка товара и оформление заявки.">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Перейти к содержимому</a>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-header__logo" href="index.html">МАГАЗИН ФИГУРОК <span class="site-header__tagline">Коллекционные персонажи</span></a>
+      <button class="site-nav__toggle" type="button" aria-expanded="false" aria-controls="primary-navigation"><span class="site-nav__icon" aria-hidden="true">☰</span><span class="site-nav__toggle-text">Меню</span></button>
+      <nav class="site-nav" id="primary-navigation" aria-label="Основная навигация">
+        <ul class="site-nav__list">
+          <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="index.html" aria-current="page">Главная</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="product.html">Товар</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="order.html">Заказ</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+    <section class="hero">
+      <div class="hero__content">
+        <h1>Фигурки из Китая и Японии</h1>
+        <div class="hero__actions">
+          <a class="button button--primary" href="catalog.html">Смотреть каталог</a>
+          <a class="button button--secondary" href="order.html">Оформить заявку</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="advantages">
+      <h2>Почему удобно выбирать у нас</h2>
+      <ul class="advantages-list">
+        <li>Каталог без лишних переходов</li>
+        <li>Прозрачные характеристики</li>
+        <li>Удобный просмотр с телефона</li>
+        <li>Простая форма заявки</li>
+      </ul>
+    </section>
+
+    <section class="section" id="popular">
+      <h2>Популярные товары</h2>
+      <div class="products-grid">
+        <article class="product-card" data-price="799" data-currency="CNY">
+          <picture class="product-card__media">
+            <source type="image/webp" srcset="images/kuricha-maid-320.webp 320w, images/kuricha-maid-640.webp 640w" sizes="(max-width: 639px) 92vw, (max-width: 1049px) 46vw, 28vw">
+            <img class="product-card__image" src="images/kuricha-maid.jpg" alt="Kuricha Maid" width="853" height="1280" loading="lazy" decoding="async">
+          </picture>
+          <h3 class="product-card__title">Kuricha Maid</h3>
+          <p class="product-card__description">
+            Производитель: Poi Art<br>
+            Размер: 1/6<br>
+            Релиз: 4 квартал 2026
+          </p>
+          <p class="product-card__price">Цена: 799 юаней<span class="product-card__price-rub"></span></p>
+          <div class="product-card__actions"><a class="button button--primary" href="product.html">Подробнее</a><button class="button button--secondary product-card__button" type="button" data-product="Kuricha Maid">Заказать</button></div>
+        </article>
+
+        <article class="product-card" data-price="19800" data-currency="JPY">
+          <picture class="product-card__media">
+            <source type="image/webp" srcset="images/kangel-320.webp 320w, images/kangel-640.webp 640w" sizes="(max-width: 639px) 92vw, (max-width: 1049px) 46vw, 28vw">
+            <img class="product-card__image" src="images/kangel.jpg" alt="KAngel" width="750" height="1125" loading="lazy" decoding="async">
+          </picture>
+          <h3 class="product-card__title">KAngel</h3>
+          <p class="product-card__description">
+            Производитель: GSC<br>
+            Размер: 1/7, 23 см<br>
+            Релиз: Февраль 2027
+          </p>
+          <p class="product-card__price">Цена: 19 800 йен<span class="product-card__price-rub"></span></p>
+          <a class="button button--primary" href="catalog.html">Смотреть в каталоге</a><button class="button button--secondary product-card__button" type="button" data-product="KAngel">Заказать</button>
+        </article>
+
+        <article class="product-card" data-price="999" data-currency="CNY">
+          <picture class="product-card__media">
+            <source type="image/webp" srcset="images/saya-320.webp 320w, images/saya-640.webp 640w" sizes="(max-width: 639px) 92vw, (max-width: 1049px) 46vw, 28vw">
+            <img class="product-card__image" src="images/saya.jpg" alt="Saya" width="533" height="800" loading="lazy" decoding="async">
+          </picture>
+          <h3 class="product-card__title">Saya</h3>
+          <p class="product-card__description">
+            Производитель: Magi Arts<br>
+            Размер: 1/6, 28 см<br>
+            Релиз: Февраль 2027
+          </p>
+          <p class="product-card__price">Цена: 999 юаней<span class="product-card__price-rub"></span></p>
+          <a class="button button--primary" href="catalog.html">Смотреть в каталоге</a><button class="button button--secondary product-card__button" type="button" data-product="Saya">Заказать</button>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contacts">
+    <div class="site-footer__inner">
+      <p>&copy; 2026 Учебный проект. Все права защищены.</p>
+      <p>Дисциплина: Фронтенд и бэкенд разработка</p>
+    </div>
+  </footer>
+
+  <dialog class="order-dialog" id="order-dialog" aria-labelledby="order-dialog-title">
+    <h2 class="order-dialog__title" id="order-dialog-title">Оформление заявки</h2>
+
+    <form class="order-form" id="order-form" action="#" method="post" novalidate>
+      <input id="selected-product" name="selected-product" type="hidden">
+
+      <div class="order-form__field">
+        <label class="order-form__label" for="order-name">Имя</label>
+        <input class="order-form__input" id="order-name" name="name" type="text" placeholder="Введите ваше имя" minlength="2" autocomplete="given-name" required>
+      </div>
+
+      <div class="order-form__field">
+        <label class="order-form__label" for="order-email">E-mail</label>
+        <input class="order-form__input" id="order-email" name="email" type="email" placeholder="example@mail.ru" autocomplete="email" required>
+      </div>
+
+      <div class="order-form__field">
+        <label class="order-form__label" for="order-phone">Телефон</label>
+        <input class="order-form__input" id="order-phone" name="phone" type="tel" inputmode="tel" placeholder="+7 (900) 000-00-00" pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$" required>
+        <small>Формат: +7 (900) 000-00-00</small>
+      </div>
+
+      <div class="order-form__field">
+        <label class="order-form__label" for="order-date">Дата связи</label>
+        <input class="order-form__input" id="order-date" name="date" type="date">
+      </div>
+
+      <div class="order-form__field">
+        <label class="order-form__label" for="order-topic">Тема заявки</label>
+        <select class="order-form__select" id="order-topic" name="topic" required>
+          <option value="">Выберите тему</option>
+          <option value="product">Заказ товара</option>
+          <option value="consultation">Консультация</option>
+          <option value="delivery">Доставка</option>
+        </select>
+      </div>
+
+      <div class="order-form__field">
+        <label class="order-form__label" for="order-comment">Комментарий</label>
+        <textarea class="order-form__textarea" id="order-comment" name="comment" rows="4" placeholder="Укажите дополнительную информацию"></textarea>
+      </div>
+
+      <div class="order-form__field order-form__field--checkbox">
+        <label class="order-form__label">
+          <input class="order-form__input" id="order-agreement" name="agreement" type="checkbox" required>
+          Я согласен на обработку данных
+        </label>
+      </div>
+
+      <div class="order-form__actions">
+        <button class="button button--secondary" type="button" id="close-order-dialog">Закрыть</button>
+        <button class="button button--primary" type="submit">Отправить заявку</button>
+      </div>
+    </form>
+  </dialog>
+
+  <p class="success-message" id="success-message" role="status" aria-live="polite" tabindex="-1" hidden>
+    Заявка проверена.
+  </p>
+</body>
+</html>

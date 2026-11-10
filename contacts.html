@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Контактная информация учебного интернет-магазина.">
+  <title>Контакты — Учебный интернет-магазин</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Учебный интернет-магазин">
+  <meta property="og:description" content="Учебный frontend-проект интернет-магазина.">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Перейти к содержимому</a>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-header__logo" href="index.html">МАГАЗИН ФИГУРОК <span class="site-header__tagline">Коллекционные персонажи</span></a>
+      <button class="site-nav__toggle" type="button" aria-expanded="false" aria-controls="primary-navigation"><span class="site-nav__icon" aria-hidden="true">☰</span><span class="site-nav__toggle-text">Меню</span></button>
+      <nav class="site-nav" id="primary-navigation" aria-label="Основная навигация">
+        <ul class="site-nav__list">
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="product.html">Товар</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="order.html">Заказ</a></li>
+          <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="contacts.html" aria-current="page">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+    <nav class="breadcrumbs" aria-label="Хлебные крошки">
+      <a class="breadcrumbs__link" href="index.html">Главная</a>
+      <span class="breadcrumbs__current">Контакты</span>
+    </nav>
+
+    <section class="section">
+      <h1>Контакты</h1>
+    </section>
+
+    <section class="section contact-layout" id="feedback" aria-label="Контакты и обратная связь">
+      <div class="contact-card">
+        <h2>Как связаться</h2>
+        <ul>
+          <li><strong>Телефон:</strong> <a href="tel:+79000000000">+7 (900) 000-00-00</a></li>
+          <li><strong>E-mail:</strong> <a href="mailto:info@example.com">info@example.com</a></li>
+          <li><strong>Адрес:</strong> г. Москва (учебный пример)</li>
+        </ul>
+        <a class="button button--secondary" href="order.html">К форме заказа</a>
+      </div>
+
+      <div>
+        <h2>Обратная связь</h2>
+        <form class="form-panel form-grid" id="contact-form" novalidate>
+          <div class="form-field">
+            <label for="contact-name">Ваше имя *</label>
+            <input id="contact-name" name="name" type="text" minlength="2" autocomplete="name" required placeholder="Имя">
+          </div>
+          <div class="form-field">
+            <label for="contact-email">E-mail *</label>
+            <input id="contact-email" name="email" type="email" autocomplete="email" required placeholder="name@example.com">
+          </div>
+          <div class="form-field form-field--wide">
+            <label for="contact-subject">Тема сообщения *</label>
+            <select id="contact-subject" name="subject" required>
+              <option value="">Выберите тему</option>
+              <option value="order">Вопрос о заказе</option>
+              <option value="product">Вопрос о фигурке</option>
+              <option value="other">Другое</option>
+            </select>
+          </div>
+          <div class="form-field form-field--wide">
+            <label for="contact-message">Сообщение *</label>
+            <textarea id="contact-message" name="message" rows="5" minlength="10" required placeholder="Напишите ваш вопрос"></textarea>
+          </div>
+          <div class="form-field form-field--wide form-field--check">
+            <label for="contact-agreement"><input id="contact-agreement" name="agreement" type="checkbox" required> Я понимаю, что это демонстрационная форма без отправки данных *</label>
+          </div>
+          <div class="form-actions form-field--wide">
+            <button class="button button--primary" type="submit">Проверить сообщение</button>
+          </div>
+        </form>
+        <p class="form-notice" id="contact-success" role="status" aria-live="polite" tabindex="-1" hidden>Все поля заполнены корректно. Это учебный проект, сообщение не отправлялось.</p>
+      </div>
+    </section>
+  </main>
+
+    <footer class="site-footer">
+    <div class="site-footer__inner">
+        <p>&copy; 2026 Учебный проект. Все права защищены.</p>
+        <p>Дисциплина: Фронтенд и бэкенд разработка</p>
+    </div>
+    </footer>
+</body>
+</html>

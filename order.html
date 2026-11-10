@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Учебная форма оформления заявки на коллекционную фигурку.">
+  <title>Оформить заявку — Магазин фигурок</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Перейти к содержимому</a>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-header__logo" href="index.html">МАГАЗИН ФИГУРОК <span class="site-header__tagline">Коллекционные персонажи</span></a>
+      <button class="site-nav__toggle" type="button" aria-expanded="false" aria-controls="primary-navigation"><span class="site-nav__icon" aria-hidden="true">☰</span><span class="site-nav__toggle-text">Меню</span></button>
+      <nav class="site-nav" id="primary-navigation" aria-label="Основная навигация">
+        <ul class="site-nav__list">
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="product.html">Товар</a></li>
+          <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="order.html" aria-current="page">Заказ</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+    <nav class="breadcrumbs" aria-label="Хлебные крошки">
+      <a class="breadcrumbs__link" href="index.html">Главная</a>
+      <span class="breadcrumbs__current">Оформление заявки</span>
+    </nav>
+
+    <section class="section" aria-labelledby="order-title">
+      <h1 id="order-title">Оформление заявки</h1>
+
+      <form class="form-panel form-grid" id="page-order-form" novalidate>
+        <div class="form-field">
+          <label for="order-page-name">Имя *</label>
+          <input id="order-page-name" name="name" type="text" minlength="2" autocomplete="given-name" required placeholder="Ваше имя">
+        </div>
+        <div class="form-field">
+          <label for="order-page-email">E-mail *</label>
+          <input id="order-page-email" name="email" type="email" autocomplete="email" required placeholder="name@example.com">
+        </div>
+        <div class="form-field">
+          <label for="order-page-phone">Телефон *</label>
+          <input id="order-page-phone" name="phone" type="tel" autocomplete="tel" required placeholder="+7 900 000-00-00">
+        </div>
+        <div class="form-field">
+          <label for="order-page-date">Удобная дата связи</label>
+          <input id="order-page-date" name="date" type="date">
+        </div>
+        <div class="form-field form-field--wide">
+          <label for="order-page-product">Выберите фигурку *</label>
+          <select id="order-page-product" name="product" required>
+            <option value="">Выберите товар</option>
+            <option value="Kuricha Maid">Nikolay</option>
+            <option value="Kuricha Maid">Nikolay nend</option>
+            <option value="Kuricha Maid">Kuricha Maid</option>
+            <option value="KAngel: Anniv. Ver.">KAngel: Anniv. Ver.</option>
+            <option value="A-Z:[B]">A-Z:[B]</option>
+            <option value="Ame">Ame</option>
+            <option value="KAngel">KAngel</option>
+            <option value="Saya">Saya</option>
+      
+          </select>
+        </div>
+        <div class="form-field form-field--wide">
+          <label for="order-page-comment">Комментарий</label>
+          <textarea id="order-page-comment" name="comment" rows="4" placeholder="Дополнительная информация"></textarea>
+        </div>
+        <div class="form-actions form-field--wide">
+          <button class="button button--primary" type="submit">Проверить заявку</button>
+          <button class="button button--secondary" type="reset">Очистить поля</button>
+        </div>
+      </form>
+      <p class="form-notice" id="order-page-success" role="status" aria-live="polite" tabindex="-1" hidden>Форма заполнена корректно.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p>&copy; 2026 Учебный проект. Все права защищены.</p>
+      <p>Дисциплина: Фронтенд и бэкенд разработка</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Карточка фигурки Nikolay">
+  <title>Nikolay — Магазин фигурок</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Перейти к содержимому</a>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-header__logo" href="index.html">МАГАЗИН ФИГУРОК <span class="site-header__tagline">Коллекционные персонажи</span></a>
+      <button class="site-nav__toggle" type="button" aria-expanded="false" aria-controls="primary-navigation"><span class="site-nav__icon" aria-hidden="true">☰</span><span class="site-nav__toggle-text">Меню</span></button>
+      <nav class="site-nav" id="primary-navigation" aria-label="Основная навигация">
+        <ul class="site-nav__list">
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li>
+          <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="product.html" aria-current="page">Товар</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="order.html">Заказ</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+    <nav class="breadcrumbs" aria-label="Хлебные крошки">
+      <a class="breadcrumbs__link" href="index.html">Главная</a> /
+      <a class="breadcrumbs__link" href="catalog.html">Каталог</a>
+      <span class="breadcrumbs__current">Nikolay</span>
+    </nav>
+
+    <section class="section product-layout" aria-label="Информация о товаре">
+      <picture class="product-visual">
+        <source type="image/webp" srcset="images/Nikolay-320.webp 320w, images/Nikolay-640.webp 640w, images/Nikolay-960.webp 960w" sizes="(max-width: 767px) 92vw, 46vw">
+        <img src="images/Nikolay.jpg" width="853" height="1280" alt="Nikolay">
+      </picture>
+
+      <div class="product-info">
+        <span class="badge">Предзаказ</span>
+        <h1>ЗАГОРОДНИХ НИКОЛАЙ В ПОЛНЫЙ РОСТ ПРЕКРАСНЫЙ БЕСЦЕННЫЙ</h1>
+        <p class="product-info__price">9999999 юаней <span class="product-card__price-rub" data-price="9999999" data-currency="CNY"></span></p>
+        <div class="product-actions">
+          <a class="button button--primary" href="order.html?product=Nikolay">Оформить заявку</a>
+          <a class="button button--secondary" href="catalog.html">В каталог</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="specifications-title">
+      <h2 id="specifications-title">Характеристики</h2>
+      <div class="table-wrapper" tabindex="0" aria-label="Таблица характеристик товара">
+        <table class="product-table">
+          <caption>Подробности о фигурке</caption>
+          <tbody>
+            <tr><th scope="row">Название</th><td>ЗАГОРОДНИХ НИКОЛАЙ В ПОЛНЫЙ РОСТ ПРЕКРАСНЫЙ БЕСЦЕННЫЙ</td></tr>
+            <tr><th scope="row">Производитель</th><td>РТУ МИРЭА</td></tr>
+            <tr><th scope="row">Тип товара</th><td>Коллекционная фигурка</td></tr>
+            <tr><th scope="row">Масштаб</th><td>1/1</td></tr>
+            <tr><th scope="row">Релиз</th><td>Февраль 2027</td></tr>
+            <tr><th scope="row">Стоимость</th><td>9999999 юаней</td></tr>
+            <tr><th scope="row">Статус</th><td>Предзаказ</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p>&copy; 2026 Учебный проект. Все права защищены.</p>
+      <p>Дисциплина: Фронтенд и бэкенд разработка</p>
+    </div>
+  </footer>
+</body>
+</html>
