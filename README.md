@@ -116,4 +116,4 @@ npm run audit
 
 Проект необходимо разместить в **отдельном репозитории `kr3-responsive-shop`**, затем при необходимости включить GitHub Pages (Settings → Pages → Deploy from a branch → main/root).
 
-Ссылка на будущую опубликованную версию: *добавляется после создания репозитория и включения Pages*.
+Ссылка на Pages: https://addana.github.io/kr3-responsive-shop/.
